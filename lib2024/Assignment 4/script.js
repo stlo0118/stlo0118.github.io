@@ -10,7 +10,7 @@ const temperatureConverter = () => {
     const responsesArr = [
         "Invalid input. Try again.",
         `<p class="result-text">Ohh..that's HOT<i class="fas fa-burn"></i></p>${conversionString}`,
-        `<p class="result-text">Not to bad<i class="far fa-sun"></i></p> ${conversionString}`,
+        `<p class="result-text">Not too bad<i class="far fa-sun"></i></p> ${conversionString}`,
         `<p class="result-text">Getting colder <i class="fas fa-icicles"></i></p>${conversionString}`
     ];
 
