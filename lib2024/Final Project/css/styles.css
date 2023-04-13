@@ -2,14 +2,15 @@
     --bg: #d3c3b6;
     --white: #ffffff;
     --text-bg: #fcf8f5;
-    --blurb-bg: #efe5da;
-    --text: #7b645b;
-}
-body {
+    --blurb-bg: #9b8b85;
+    --menu-bg: #eee7dc;
+  }
+
+  body {
     background-color: var(--bg);
+    color: #7b645b;
     font-family: 'Gentium Book Plus', serif;
-    color: var(--text);
-}
+  }
 
 /* Preloader */
 .bookshelf_wrapper {
@@ -241,18 +242,19 @@ body {
 }
 
 /* Logo & Header */
-.header-container {
+.headerContainer {
+    background: var(--blurb-bg);
     display: flex;
-}
-.item1 {
-    transform: scale(1.5) translate(15px, 12px);
-    align-self: flex-start;
-}
-.item2 {
-    font-size: 25px;
-    align-self: center;
-    flex-grow: 2;
-}
+    margin-bottom: 50px;
+    min-height: 100px;
+  }
+
+  .header {
+    font-size: 50px;
+    color: var(--text-bg);
+    transform: translate(0px, 10px);
+  }
+
 @keyframes book-bounce {
     0% {
         transform: translateY(0);
@@ -267,6 +269,7 @@ body {
         transform: translateY(0);
    }
 }
+
 @keyframes shelf-lift {
     0% {
         transform: translateY(0) rotate(0);
@@ -287,19 +290,24 @@ body {
         transform: translateY(0);
    }
 }
+
 .book-shelf:hover {
     cursor: pointer;
 }
+
 .book-shelf:hover .book-shelf__book {
     animation: book-bounce 0.4s ease;
     animation-iteration-count: 1;
 }
+
 .book-shelf:hover .book-shelf__book--two {
     animation-delay: 0.04s;
 }
+
 .book-shelf:hover .book-shelf__book--three {
     animation-delay: 0.08s;
 }
+
 .book-shelf:hover .book-shelf__shelf {
     animation: shelf-lift 0.4s ease;
     animation-iteration-count: 1;
@@ -307,20 +315,17 @@ body {
 }
 
 /* Navigation Bar */
-.list-inline {
-    text-align: center;
-    background-color: #eee7dc;
-    border-radius: 25px;
+.navContainer {
+    background: var(--menu-bg);
+    border-radius: 20px;
+    display: flex;
+    width: 50%;
+    height: auto;
     margin: 20px;
     margin-left: 500px;
-    overflow: hidden;
-    padding: 0;
-    width: 50%;
+    padding: 0px;
 }
-ul li {
-    display: inline-block;
-    vertical-align: middle;
-}
+
 ul li:hover {
     transition: all 1s ease-in-out;
     transform: scale(1.2);
@@ -331,10 +336,12 @@ ul li:hover {
 *, *:before, *:after { 
     box-sizing: inherit; 
 }
+
 *:before, *:after { 
     content: ""; 
     position: absolute; 
 } 
+
 .book1{
     width: 70px;
     height: 105px;
@@ -346,6 +353,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#D11F2F 13px, #ba0716 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book1:after{
     height: 13px;
     width: 68px; 
@@ -356,6 +364,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book1:before{
     height: 5px;
     width: 40px; 
@@ -365,12 +374,15 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #D11F2F;  
 }
+
 .fa-house {
     transform: scale(0.5) translate(12px, 60px);
 }
+
 .fa-house path {
     fill: #eee7dc;
 }
+
 .book2{
     width: 70px;
     height: 105px;
@@ -382,6 +394,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#425f7b 13px, #59789a 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book2:after{
     height: 13px;
     width: 68px; 
@@ -392,6 +405,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book2:before{
     height: 5px;
     width: 40px; 
@@ -401,12 +415,15 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #425f7b;  
 }
+
 .fa-circle-info {
     transform: scale(0.5) translate(12px, 55px);
 }
+
 .fa-circle-info path {
     fill: #eee7dc;
 }
+
 .book3{
     width: 70px;
     height: 105px;
@@ -418,6 +435,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#6eab70 13px, #4d7e4f 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book3:after{
     height: 13px;
     width: 68px; 
@@ -428,6 +446,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book3:before{
     height: 5px;
     width: 40px; 
@@ -437,12 +456,15 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #6eab70;  
 }
+
 .fa-globe {
     transform: scale(0.5) translate(12px, 55px);
 }
+
 .fa-globe path {
     fill: #eee7dc;
 }
+
 .book4{
     width: 70px;
     height: 105px;
@@ -454,6 +476,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#857ab0 13px, #665c89 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book4:after{
     height: 13px;
     width: 68px; 
@@ -464,6 +487,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book4:before{
     height: 5px;
     width: 40px; 
@@ -473,12 +497,15 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #857ab0;  
 }
+
 .fa-calendar {
     transform: scale(0.5) translate(12px, 43px);
 }
+
 .fa-calendar path {
     fill: #eee7dc;
 }
+
 .book5{
     width: 70px;
     height: 105px;
@@ -490,6 +517,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#e7c06e 13px, #efb56b 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book5:after{
     height: 13px;
     width: 68px; 
@@ -500,6 +528,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book5:before{
     height: 5px;
     width: 40px; 
@@ -509,12 +538,15 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #e7c06e;  
 }
+
 .fa-paw {
     transform: scale(0.5) translate(12px, 60px);
 }
+
 .fa-paw path {
     fill: #eee7dc;
 }
+
 .book6{
     width: 70px;
     height: 105px;
@@ -526,6 +558,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#f08564 13px, #ed6c61 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book6:after{
     height: 13px;
     width: 68px; 
@@ -536,6 +569,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book6:before{
     height: 5px;
     width: 40px; 
@@ -545,12 +579,15 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #f08564;  
 }
+
 .fa-award {
     transform: scale(0.45) translate(12px, 32px);
 }
+
 .fa-award path {
     fill: #eee7dc;
 }
+
 .book7{
     width: 70px;
     height: 105px;
@@ -562,6 +599,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#ee6367 13px, #dd5052 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book7:after{
     height: 13px;
     width: 68px; 
@@ -572,6 +610,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book7:before{
     height: 5px;
     width: 40px; 
@@ -581,12 +620,15 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #ee6367;  
 }
+
 .fa-location-pin {
     transform: scale(0.45) translate(12px, 32px);
 }
+
 .fa-location-pin path {
     fill: #eee7dc;
 }
+
 .book8{
     width: 70px;
     height: 105px;
@@ -598,6 +640,7 @@ ul li:hover {
     background-image: linear-gradient(to right,#998c88 13px, #78645d 15px, transparent 15px);  
     box-shadow:  2px 6px 40px 0px var(--bg);
 }
+
 .book8:after{
     height: 13px;
     width: 68px; 
@@ -608,6 +651,7 @@ ul li:hover {
     box-shadow: inset 4px 6px 0px 0px #E4E0CE;  
     background-image: linear-gradient(to bottom, transparent 6px, #E4E0CE 8px, transparent 8px, transparent 12px, #E4E0CE 12px, transparent 14px, transparent 18px,#E4E0CE 18px, transparent 20px, transparent 24px, #E4E0CE 24px, transparent 26px, transparent 30px, #E4E0CE 30px, transparent 32px, transparent 36px, #E4E0CE 36px, transparent 38px, transparent 42px, #E4E0CE 42px, transparent 44px, transparent 48px, #E4E0CE 48px, transparent 50px);     
 }
+
 .book8:before{
     height: 5px;
     width: 40px; 
@@ -617,9 +661,11 @@ ul li:hover {
     border-radius: 5px;
     box-shadow: 0px 10px #998c88;  
 }
+
 .fa-address-card {
     transform: scale(0.5) translate(12px, 60px);
 }
+
 .fa-address-card path {
     fill: #eee7dc;
 }
@@ -654,3 +700,78 @@ ul li:hover {
   }
 
 /* Footer */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #contact {
+    padding: 20px 0;
+  }
+
+  .social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .contact-area {
+    border-bottom: 1px solid var(--text-bg);
+  }
+
+  .contact-content p {
+    font-size: 15px;
+  }
+
+  .contact-content h6 {
+    color: var(--text-bg);
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .contact-content span {
+    color: var(--blurb-bg);
+    margin: 10px;
+  }
+
+  .contact-social > ul {
+    display: inline-flex;
+  }
+
+  .contact-social ul li a {
+    border: 1px solid var(--text-bg);
+    color: var(--text-bg);
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+  }
+
+  .contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+  }
+
+  .contact-content img {
+    max-width: 210px;
+  }
+
+  #contact, footer {
+    background: var(--blurb-bg);
+    color: var(--text-bg);
+  }
+
+  footer {
+    margin: -16px;
+  }
+  
+  footer p {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer img {
+    width: 44px;
+  }
