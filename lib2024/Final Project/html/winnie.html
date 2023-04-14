@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="The White River Public Library webpage">
-    <meta keywords="white river public library, white river, library, books, public access computers, free wifi, children's programs, summer reading program">
+    <meta name="keywords" content="white river public library, white river, library, books, public access computers, free wifi, children's programs, summer reading program">
     <meta name="author" content="Natasha St Louis">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>White River Public Library</title>
-    <link href="css/backup.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet">
@@ -61,9 +62,8 @@
         </div>
         
         <!--Body-->
-        <section id="flexContainer">
             
-            <!--Navigation-->
+        <!--Navigation-->
             <div class="navContainer">
                 <ul class='list-inline' style="list-style-type:none;">
                     <li class='book1'>
@@ -125,20 +125,71 @@
                 </ul>
             </div>>
 
-            <!--Content-->
-            
-            
-            <!--Aside-->
-            <aside>aside</aside>
-        </section>
+        <!--Content-->
+        <div class="Content_Container">
+            <h2>Winnie's Story</h2>
+            <img class="winnie-logo" src="img/winnie-the-pooh.png" width="100" height="100" alt="White River Logo">
+            <h3>Where it all began...</h3>
+            <div class="Content">
+                <div class="Shape Shape--left Shape--inset">
+                    <img src="img/Harry_Colebourn_and_Winnie.jpg" width="194" height="300" alt="Winnie and the Lieutenant">
+                </div>
+                <p>One hundred years ago, the community of White River, Ontario, Canada, bid farewell to a little black bear cub, not knowing at the time that this bear would become the inspiration of author A.A. Milne. This is her story. Winnie was found by a trapper, and he brought her back to White River. At this time World War I was taking young men from their homelands. White River was a half-way point between Winnipeg and Toronto, where trains and troops would stop to refuel. A soldier riding out of White River wrote in his journal the following passage: “August 24, 1914. Left Port Arthur 7A. In train all day. Bought bear. $20.” This young man was Harry Colebourn. He had purchased that small bear cub from the trapper and named it Winnie after his hometown of Winnipeg, Manitoba.
+                </p>
+            </div>
+                
+            <div class="Content">
+                <div class="Shape Shape--right Shape--inset">
+                    <img src="Winnie_the_Pet.jpg" width="206" height="300" alt="Winnie">
+                </div>
+                <p>Lieutenant Colebourn’s destination was England. Winnie travelled with Colebourn and became a pet to the Second Canadian Infantry Brigade. In December 1914, Colebourn received news that he would soon be posted in France. He knew Winnie would not be able to accompany him, so he made arrangements to keep her in the London Zoo until he returned. Winnie soon became a favorite attraction for everyone.
+                </p>
+            </div>
+
+            <div class="Content">
+                <div class="Shape Shape--right Shape--inset">
+                    <img src="winnie-and-christopher.jpg" width="209" height="300" alt="Winnie and Christopher">
+                </div>
+                <p>Winnie captured the hearts of many visitors including A.A. Milne and his son Christopher Robin Milne. Milne’s first edition of Winnie the Pooh stories, illustrated by Ernest Shepard, came out in 1926. Winnie lived a long life in the London Zoo. She died May 12, 1934 at the age of 20. The London newspaper ran her obituary as she was so loved by all. A bronze statue now stands at the London Zoo in her memory. It was unveiled in 1981. Part of the inscription reads “She gave her name to Winnie the Pooh, and A.A. Milne and Ernest Shepard gave Winnie the Pooh to the rest of the world.”
+                </p>
+            </div>
+        </div>
         
         <!--Footer-->
-        <footer>footer</footer>
+        <section class="contact-area" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="contact-content text-center">
+                            <a href="#"><img src="img/White_River2.png" alt="logo"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum </p>
+                            <div class="hr"></div>
+                            <h6>1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.</h6>
+                            <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
+                            <div class="contact-social">
+                                <ul class="social">
+                                    <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
+                                    <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============== 1.9 Contact Area End ====================-->
+        <!-- =============== 1.9 Footer Area Start ====================-->
+        <footer>
+            <p>Copyright &copy; 2019 <img src="img/White_River2.png" alt="logo"> All Rights Reserved.</p>
+        </footer>
         
     </div>
 
     <!--Scripts-->
-    <script type="text/javascript" src="js/backup.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 
 </html>
