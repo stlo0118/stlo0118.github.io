@@ -33,11 +33,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .books_list {
     margin: 0 auto;
     width: 300px;
     padding: 0;
 }
+
 .book_item {
     position: absolute;
     top: -120px;
@@ -52,10 +54,12 @@
     transform: translateX(300px);
     animation: travel 2500ms linear infinite;
 }
+
 .book_item.first {
     top: -140px;
     height: 140px;
 }
+
 .book_item.first:before, .book_item.first:after {
     content: '';
     position: absolute;
@@ -65,10 +69,12 @@
     height: 5px;
     background-color: var(--white);
 }
+
 .book_item.first:after {
     top: initial;
     bottom: 10px;
 }
+
 .book_item.second:before, .book_item.fifth:before, .book_item.second:after, .book_item.fifth:after {
     box-sizing: border-box;
     content: '';
@@ -80,10 +86,12 @@
     border-top: 5px solid var(--white);
     border-bottom: 5px solid var(--white);
 }
+
 .book_item.second:after, .book_item.fifth:after {
     top: initial;
     bottom: 10px;
 }
+
 .book_item.third:before, .book_item.third:after {
     box-sizing: border-box;
     content: '';
@@ -95,14 +103,17 @@
     border-radius: 50%;
     border: 5px solid var(--white);
 }
+
 .book_item.third:after {
     top: initial;
     bottom: 10px;
 }
+
 .book_item.fourth {
     top: -130px;
     height: 130px;
 }
+
 .book_item.fourth:before {
     box-sizing: border-box;
     content: '';
@@ -114,14 +125,17 @@
     border-top: 5px solid var(--white);
     border-bottom: 5px solid var(--white);
 }
+
 .book_item.fifth {
     top: -100px;
     height: 100px;
 }
+
 .book_item.sixth {
     top: -140px;
     height: 140px;
 }
+
 .book_item.sixth:before {
     box-sizing: border-box;
     content: '';
@@ -132,6 +146,7 @@
     height: 5px;
     background-color: var(--white);
 }
+
 .book_item.sixth:after {
     box-sizing: border-box;
     content: '';
@@ -143,21 +158,27 @@
     border-radius: 50%;
     border: 5px solid var(--white);
 }
+
 .book_item:nth-child(2) {
     animation-delay: 416.6666666667ms;
 }
+
 .book_item:nth-child(3) {
     animation-delay: 833.3333333333ms;
 }
+
 .book_item:nth-child(4) {
     animation-delay: 1250ms;
 }
+
 .book_item:nth-child(5) {
     animation-delay: 1666.6666666667ms;
 }
+
 .book_item:nth-child(6) {
     animation-delay: 2083.3333333333ms;
 }
+
 .shelf {
     width: 300px;
     height: 5px;
@@ -165,6 +186,7 @@
     background-color: var(--white);
     position: absolute;
 }
+
 .shelf:before, .shelf:after {
     content: '';
     position: absolute;
@@ -178,10 +200,12 @@
     left: 5%;
     animation: move 250ms linear infinite;
 }
+
 .shelf:after {
     top: 400%;
     left: 7.5%;
 }
+
 @keyframes move {
     from {
         background-position-x: 0;
@@ -190,6 +214,7 @@
         background-position-x: 10px;
 }
 }
+
 @keyframes travel {
     0% {
         opacity: 0;
@@ -235,6 +260,7 @@
         transform: translateX(0px) rotateZ(-90deg);
 }
 }
+
 .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
@@ -242,14 +268,12 @@
     animation-name: animatebottom;
     animation-duration: 1s
 }
-@-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-}
+
 @keyframes animatebottom { 
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
 }
+
 #myDiv {
     display: none;
     text-align: center;
@@ -329,14 +353,16 @@
 }
 
 /* Navigation Bar */
-.navContainer {
+.navContainer ul {
     background: var(--menu-bg);
     border-radius: 20px;
+    height: 135px;
+    max-width: 1000px;
     display: flex;
-    width: 50%;
-    height: auto;
-    margin: 20px;
-    margin-left: 500px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
     padding: 0px;
 }
 
@@ -359,8 +385,6 @@ ul li:hover {
 .book1{
     width: 70px;
     height: 105px;
-    top: 50%;
-    margin: 20px;
     position: relative;
     background: #F33139;
     border-radius: 5px 4px 3px 8px;
@@ -400,8 +424,6 @@ ul li:hover {
 .book2{
     width: 70px;
     height: 105px;
-    top:50%;
-    margin: 20px;
     position: relative;
     background: #6685a4;
     border-radius: 5px 4px 3px 8px;
@@ -441,8 +463,6 @@ ul li:hover {
 .book3{
     width: 70px;
     height: 105px;
-    top:50%;
-    margin: 20px;
     position: relative;
     background: #94b576;
     border-radius: 5px 4px 3px 8px;
@@ -465,7 +485,6 @@ ul li:hover {
     height: 5px;
     width: 40px; 
     right: 9px;
-    top: 20px; 
     background:#6eab70;
     border-radius: 5px;
     box-shadow: 0px 10px #6eab70;  
@@ -482,8 +501,6 @@ ul li:hover {
 .book4{
     width: 70px;
     height: 105px;
-    top:50%;
-    margin: 20px;
     position: relative;
     background: #b49fcb;
     border-radius: 5px 4px 3px 8px;
@@ -523,8 +540,6 @@ ul li:hover {
 .book5{
     width: 70px;
     height: 105px;
-    top:50%;
-    margin: 20px;
     position: relative;
     background: #ead1a6;
     border-radius: 5px 4px 3px 8px;
@@ -564,8 +579,6 @@ ul li:hover {
 .book6{
     width: 70px;
     height: 105px;
-    top:50%;
-    margin: 20px;
     position: relative;
     background: #f2a367;
     border-radius: 5px 4px 3px 8px;
@@ -605,8 +618,6 @@ ul li:hover {
 .book7{
     width: 70px;
     height: 105px;
-    top:50%;
-    margin: 20px;
     position: relative;
     background: #e69793;
     border-radius: 5px 4px 3px 8px;
@@ -646,8 +657,6 @@ ul li:hover {
 .book8{
     width: 70px;
     height: 105px;
-    top:50%;
-    margin: 20px;
     position: relative;
     background: #d2c7c4;
     border-radius: 5px 4px 3px 8px;
@@ -691,22 +700,48 @@ ul li:hover {
     display: flex;
     margin: 50px;
   }
+
   .Content {
     clear: both;
   }
   
+.calendarContainer {
+    background-color: var(--text-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+
+.calendar {
+    margin: 20px;
+}
+
+.calendarButton {
+    margin-bottom: 20px;
+}
+
   p {
     padding:15px;
   }
+
   .Shape {
     display: block;
     width: 18rem;
     height: 18rem;
     background-color: var(--text-bg);
   }
+
   .Shape--left {
     float: left;
   }
+
+  .Shape--right {
+    float: right;
+  }
+
   .Shape--circle {
     border-radius: 50%;
     shape-outside: circle();
@@ -793,4 +828,143 @@ img {
 
   footer img {
     width: 44px;
+  }
+
+  /* Contact Us */
+.formContainer {
+    background-color: var(--text-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    
+}
+
+  input::placeholder, textarea::placeholder {
+  font-size: 0.875em;
+}
+
+/* on hover placeholder */
+
+input:hover::placeholder, textarea:hover::placeholder {
+  font-size: 0.875em;
+  color: var(--text-bg);
+}
+
+.formHeader {
+  position: relative;
+  margin: 50px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 50px auto;
+}
+
+input {
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  border: solid 1px var(--blurb-bg);
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: var(--blurb-bg);
+  color: var(--text-bg);
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  font-size: 0.875em;
+  
+  border: solid 1px var(--blurb-bg);
+  
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: var(--blurb-bg);
+  color: var(--text-bg);
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-size: 0.875em;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px var(--blurb-bg);
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+/* About Us */
+.aboutContainer {
+    background-color: var(--text-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:var(--blurb-bg);
+    height: 1px;
+  }
+
+.pLeft {
+    text-align: left;
+}  
+
+.pRight {
+    text-align: right;
+}
+
+/* Festival */
+.festivalContainer {
+    background-color: var(--text-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+    list-style-position: inside;
   }
