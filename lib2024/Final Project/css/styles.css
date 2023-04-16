@@ -10,6 +10,7 @@
     background-color: var(--bg);
     color: #7b645b;
     font-family: 'Gentium Book Plus', serif;
+    font-size: larger;
   }
 
 /* Preloader */
@@ -353,7 +354,7 @@
 }
 
 /* Navigation Bar */
-.navContainer ul {
+.navContainer ol {
     background: var(--menu-bg);
     border-radius: 20px;
     height: 135px;
@@ -366,7 +367,7 @@
     padding: 0px;
 }
 
-ul li:hover {
+ol li:hover {
     transition: all 1s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
@@ -698,12 +699,34 @@ ul li:hover {
     background-color: var(--text-bg);
     border-radius: 20px;
     display: flex;
-    margin: 50px;
-  }
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 1000px;
+}
 
-  .Content {
+.Content_Container img {
+    transform: translate(0px, 60px);
+}
+
+.Content {
     clear: both;
-  }
+}
+
+.servicesContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services1 {
+    text-align: left;
+    transform: translate(50px, 0px);
+}
+
+.services2 {
+    text-align: left;
+    transform: translate(50px, 0px);
+}
   
 .calendarContainer {
     background-color: var(--text-bg);
@@ -712,6 +735,7 @@ ul li:hover {
     flex-direction: column;
     margin: auto;
     margin-bottom: 50px;
+    margin-top: 50px;
     max-width: 1000px;
 }
 
@@ -838,8 +862,12 @@ img {
     flex-direction: column;
     margin: auto;
     margin-bottom: 50px;
+    margin-top: 50px;
     max-width: 1000px;
-    
+}
+
+.phoneNumber p {
+    text-align: center;
 }
 
   input::placeholder, textarea::placeholder {
@@ -934,7 +962,10 @@ textarea:hover {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 1000px;
 }
 
 hr {
@@ -954,6 +985,31 @@ hr {
     text-align: right;
 }
 
+.WRPL {
+    border-radius: 50%;
+    transform: translate(20px, 80px);
+}
+
+.WRPL2 {
+    border-radius: 50%;
+    transform: translate(0px, 50px);
+}
+
+.teamContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.staff ul {
+    list-style-type: none;
+    transform: translate(-20px, 0px);
+}
+
+.board ul {
+    list-style-type: none;
+    transform: translate(-20px, 0px);
+}
+
 /* Festival */
 .festivalContainer {
     background-color: var(--text-bg);
@@ -961,10 +1017,120 @@ hr {
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
     max-width: 1000px;
 }
 
-ol.c {
-    list-style-type: upper-roman;
-    list-style-position: inside;
-  }
+.festivalContainer ul {
+    text-align: left;
+    align-self: center;
+}
+
+/* Winnie */
+.winnieContainer {
+    background-color: var(--text-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.winnie-logo {
+    align-self: center;
+}
+
+.storyContainer {
+    margin-bottom: 50px;
+}
+
+/* Hours & Location */
+.mapContainer {
+    background-color: var(--text-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.map {
+    margin: 50px;
+}
+
+.hoursContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.summerHours, .winterHours {
+    text-align: center;
+}
+
+.summerHours ul {
+    list-style-type: none;
+    transform: translate(-20px, 0px);
+}
+
+.winterHours ul {
+    list-style-type: none;
+    transform: translate(-20px, 0px);
+}
+
+/* Online Resources */
+.resourceContainer {
+    background-color: var(--text-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.resourceContainer img {
+    margin: auto;
+}
+
+.resourcesTable {
+    background-color: var(--blurb-bg);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 900px;
+}
+
+.resourcesTable h2 {
+    color: var(--text-bg);
+    font-size: 130%;
+}
+
+.resourcesTable p {
+    color: var(--text-bg);
+}
+
+.catalogueContainer, .overdriveContainer, .ancestryContainer, .pebblegoContainer, .lingoliteContainer, .teenhealthContainer, .worldbookContainer, .craftContainer {
+    border: 1px solid var(--text-bg);
+    height: 220px;
+    width: 223px;
+    max-width: 225px;
+    max-height: 225px;
+    margin: auto;
+}
+
+.resourcesTable img {
+    align-self: center;
+    height: auto;
+    margin: auto;
+    width: 60%;
+}
